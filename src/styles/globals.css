@@ -1,0 +1,12 @@
+/* src/styles/globals.css */
+@import "tailwindcss";
+/* v4 的写法 */
+
+/* 你之前写的： */
+:root {
+    --primary-rgb: 38, 63, 252;
+    --secondary-rgb: 62, 85, 255;
+    --primary: rgb(var(--primary-rgb));
+    --secondary: rgb(var(--secondary-rgb));
+
+}
