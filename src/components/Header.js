@@ -83,11 +83,18 @@ export default function Header() {
                         <Link
                           key={j}
                           href={sub.href}
-                          className="pl-6 pr-12 py-2 font-normal rounded-2xl transition text-white whitespace-pre"
+                          className={`
+                             relative
+                             pl-6 pr-12 py-2
+                             font-normal rounded-2xl transition-all
+                           text-white whitespace-nowrap
+                             ${subActive
+                              ? 'pl-10 before:content-["•"] before:absolute before:left-6 before:text-white'
+                              : 'hover:pl-10'
+                            }
+                          `}
                         >
-                          {subActive ? '•\u00A0\u00A0\u00A0' : ''}
                           {sub.label}
-                          {subActive ? '' : '\u00A0\u00A0\u00A0\u00A0'}
                         </Link>
                       )
                     })}
