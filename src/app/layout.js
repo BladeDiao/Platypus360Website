@@ -6,7 +6,7 @@ import '../styles/globals.css'
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen">
+      <body className="flex flex-col min-h-screen bg-indigo-100">
         <Header
           headerBg="bg-white"
           navBg="bg-blue-600"
