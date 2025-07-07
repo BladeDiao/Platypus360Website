@@ -98,11 +98,11 @@ export default function Home() {
           <div>
             <h4 className="font-semibold text-themedark mb-4">You Are In Control</h4>
             <nav className="space-y-2 text-gray-700">
-              <a href="/">Home</a>
+              {/* <a href="/">Home</a>
               <a href="/products/compendium">Compendiums</a>
               <a href="/products/touchscreen">Touchscreens</a>
               <a href="/about">About</a>
-              <a href="/contact">Contact</a>
+              <a href="/contact">Contact</a> */}
             </nav>
           </div>
           <div>
