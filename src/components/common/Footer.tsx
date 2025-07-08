@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-1 text-sm leading-snug">
               <li className='flex'>
                 <Image
-                  src="email.png"
+                  src="Email.png"
                   alt="Flag B"
                   width={100}
                   height={100}
@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
                 &nbsp;Email: info@platypus360.com</li>
               <li className='flex'>
                 <Image
-                  src="phone.png"
+                  src="Phone.png"
                   alt="Flag B"
                   width={100}
                   height={100}
@@ -152,7 +152,7 @@ const Footer: React.FC = () => {
                 &nbsp;1800 339 4933 (Freecall)</li>
               <li className='flex'>
                 <Image
-                  src="phone.png"
+                  src="Phone.png"
                   alt="Flag B"
                   width={100}
                   height={100}
