@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col flex-1">
             <div className="flex space-x-3 mb-4 md:mb-0 grow-1">
               <Image
-                src="country_1.jpg"
+                src="/country_1.jpg"
                 alt="Flag A"
                 width={400}
                 height={300}
@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                 priority
               />
               <Image
-                src="country_2.jpg"
+                src="/country_2.jpg"
                 alt="Flag B"
                 width={400}
                 height={300}
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
                 <Link href="#" className="hover:underline flex">
                   Compendium Folders&nbsp;
                   <Image
-                    src="ExternalLink.png"
+                    src="/ExternalLink.png"
                     alt="Flag B"
                     width={100}
                     height={100}
@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
                 <Link href="#" className="hover:underline flex">
                   Just Brilliant Guides&nbsp;
                   <Image
-                    src="ExternalLink.png"
+                    src="/ExternalLink.png"
                     alt="Flag B"
                     width={100}
                     height={100}
@@ -111,7 +111,7 @@ const Footer: React.FC = () => {
                 <Link href="#" className="hover:underline flex">
                   Hospitality Products&nbsp;
                   <Image
-                    src="ExternalLink.png"
+                    src="/ExternalLink.png"
                     alt="Flag B"
                     width={100}
                     height={100}
@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-1 text-sm leading-snug">
               <li className='flex'>
                 <Image
-                  src="Email.png"
+                  src="/Email.png"
                   alt="Flag B"
                   width={100}
                   height={100}
@@ -141,7 +141,7 @@ const Footer: React.FC = () => {
                 &nbsp;Email: info@platypus360.com</li>
               <li className='flex'>
                 <Image
-                  src="Phone.png"
+                  src="/Phone.png"
                   alt="Flag B"
                   width={100}
                   height={100}
@@ -152,7 +152,7 @@ const Footer: React.FC = () => {
                 &nbsp;1800 339 4933 (Freecall)</li>
               <li className='flex'>
                 <Image
-                  src="Phone.png"
+                  src="/Phone.png"
                   alt="Flag B"
                   width={100}
                   height={100}
@@ -170,11 +170,11 @@ const Footer: React.FC = () => {
         {/* --- Logo区和按钮 --- */}
         <div className="flex flex-row lg:flex-row items-center justify-between py-6 px-8">
           {[
-            'footer_1.png',
-            'footer_2.png',
-            'footer_3.png',
-            'footer_4.png',
-            'footer_5.png',
+            '/footer_1.png',
+            '/footer_2.png',
+            '/footer_3.png',
+            '/footer_4.png',
+            '/footer_5.png',
           ].map((src, idx) => (
             <Image
               key={idx}
@@ -209,7 +209,7 @@ const Footer: React.FC = () => {
           <div className="flex space-x-4">
             <Link href="#">
               <Image
-                src="Facebook.png"
+                src="/Facebook.png"
                 alt="Facebook"
                 width={24}
                 height={24}
@@ -219,7 +219,7 @@ const Footer: React.FC = () => {
             </Link>
             <Link href="#">
               <Image
-                src="Instagram.png"
+                src="/Instagram.png"
                 alt="Instagram"
                 width={24}
                 height={24}
