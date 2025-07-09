@@ -223,7 +223,7 @@ export default function Home() {
                 You Are In Control
               </h2>
               <p className="text-lg pt-4">
-                Instant, up-to-date access to all your property's information on guests'<br />
+                Instant, up-to-date access to all your property&apos;s information on guests&apos;<br />
                 smartphones or devices—no apps or downloads required. Customisable<br />
                 to match your branding, the Pladdypus Digital Concierge ensures your<br />
                 guests always have the latest details about your services, amenities, and<br />
