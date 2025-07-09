@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="relative bg-themedark text-white overflow-visible">
       {/* 向上延伸 5rem */}
-      <div className="absolute inset-x-0 top-0 -mt-20 h-20 -z-50" />
+      <div className="absolute inset-x-0 top-0 -mt-60 h-60 bg-themedark -z-20" />
 
       <div className="max-w-7xl mx-auto pt-12">
         {/* --- 上半区 --- */}

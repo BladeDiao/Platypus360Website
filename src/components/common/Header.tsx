@@ -53,12 +53,12 @@ const Header: React.FC = () => {
   return (
     <header
       className={`
-        fixed top-0 left-0 w-full z-50 transform transition-transform duration-300 h-20
+        fixed top-0 left-0 w-full z-50 transform transition-transform duration-300 h-22
         ${showHeader ? 'translate-y-0' : '-translate-y-full'}
-        bg-white py-4
+        bg-white py-4 shadow-lg
       `}
     >
-      <div className="container mx-auto flex items-center justify-between px-6">
+      <div className="container mx-auto flex items-center justify-between px-6 pt-2">
         {/* 左侧占位：固定宽度 w-60 (240px) */}
         <div className="w-60 flex justify-start">
           <Link href="/" className="block">
@@ -124,7 +124,7 @@ const Header: React.FC = () => {
                 key={idx}
                 href={item.href!}
                 className={`
-                  px-6 py-3 font-medium rounded-3xl transition test-themedark ${
+                  px-6 py-3 font-medium rounded-3xl transition text-themedark ${
                     isActive ? 'text-white bg-themeblue' : 'hover:opacity-80'
                   }
                 `}
@@ -141,7 +141,7 @@ const Header: React.FC = () => {
             href="https://manage.platypus360.com/login"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-black text-white rounded-full hover:opacity-80 transition"
+            className="px-6 py-3 bg-themedark text-white rounded-full hover:opacity-80 transition"
           >
             LOG IN
           </a>

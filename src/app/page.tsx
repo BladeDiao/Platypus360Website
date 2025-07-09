@@ -1,6 +1,35 @@
 // app/page.tsx
 import Image from 'next/image';
+import HomeCarousel, { Slide } from '../components/home/HomeCarousel';
+import FlipWord  from '../components/common/FlipWord';
+
 export default function Home() {
+  const slides: Slide[] = [
+    {
+      content: (
+        <>
+          With an affordable subscription and no lock-in contracts, the Digital Compendium
+          is a flexible, low-cost solution that requires minimal effort to maintain. It is an
+          interactive and cost-effective way to increase revenue, improve efficiency, and
+          enhance the guest experience.
+        </>
+      ),
+      imageSrc: '/Home_1.png',
+      imageAlt: 'Home_1',
+    },
+    {
+      content: (
+        <>
+          Another testimonial or promotional text goes here.Another testimonial or promotional text goes here.
+          Another testimonial or promotional text goes here.Another testimonial or promotional text goes here.
+
+        </>
+      ),
+      imageSrc: '/Home_1.png',
+      imageAlt: 'Home_1',
+    },
+  ];
+
   return (
     <main className="">
       {/* Digital Concierge Section */}
@@ -26,8 +55,8 @@ export default function Home() {
               Digitise your guest compendium and provide an
               engaging experience that enhances guest satisfaction
               and boosts engagement with your services. Perfect for
-              all types of accommodation - from hotels and resorts
-              to B&Bs and holiday parks - the Digital Compendium
+              all types of accommodation from hotels and resorts
+              to B&Bs and holiday parks the Digital Compendium
               allows guests to access essential information on their
               own smartphone or device.
             </p>
@@ -41,15 +70,15 @@ export default function Home() {
       <div className="h-20 bg-gradient-to-r from-themeblue to-[#050F49]"></div>
 
       {/* Call-to-Action Section */}
-      <section className="py-16 w-[calc(100vw-4rem)] mx-auto rounded-4xl relative -mt-20 z-10 bg-white shadow-2xl">
+      <section className="pt-16 w-[calc(100vw-4rem)] mx-auto rounded-4xl relative -mt-20 z-10 bg-white shadow-2xl">
         <div className="mx-auto px-6 text-center space-y-6 flex max-w-7xl justify-center">
           <h2 className="text-5xl font-bold text-themedark flex-1/2 my-auto">
-            Simplify guest <br />communication, <br />promote your services, <br />and boost revenue with <br />a <span className="text-themeblue">powerful</span> solution.
+            Simplify guest <br />communication, <br />promote your services, <br />and boost revenue with <br />a <FlipWord/><span className='invisible'>*********</span>  solution.
           </h2>
           <div className='flex flex-col flex-1/2 p-8 gap-8'>
             <Image
-              src="Home_1.png"
-              alt="Flag A"
+              src="Home_2.png"
+              alt="Home A"
               width={600}
               height={450}
               unoptimized
@@ -57,8 +86,8 @@ export default function Home() {
               className='w-full h-80 shadow-2xl'
             />
             <Image
-              src="Home_1.png"
-              alt="Flag A"
+              src="Home_3.png"
+              alt="Home B"
               width={600}
               height={450}
               unoptimized
@@ -125,6 +154,8 @@ export default function Home() {
               className='w-full'
             />
           </div>
+
+
         </div>
 
         <div className="max-w-7xl mx-auto flex items-stretch rounded-4xl bg-themedark">
@@ -152,88 +183,83 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </section>
-
-      {/* Hero Section */}
-      <section className="py-20 bg-gray-50 w-full">
-        <div className="container mx-auto px-6 grid grid-cols-4 ">
-          <h2 className="text-3xl font-bold text-themedark">Free up your front desk staff</h2>
-          <h2 className="text-3xl font-bold text-themedark">Promote your services and increase revenue</h2>
-          <h2 className="text-3xl font-bold text-themedark">Interactive and engaging</h2>
-          <h2 className="text-3xl font-bold text-themedark">Simple and easy to use</h2>
-        </div>
-      </section>
-
-      {/* Overview Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-6 space-y-6 text-lg text-gray-700">
-          <p>
-            From onsite services and facilities to top local attractions and must-visit spots, your digital directory keeps everything your guests need right at their fingertips.
-          </p>
-          <p>
-            Provide your Digital Compendium to your guests at multiple touch points along the communication chain allowing them to access valuable information on your venue and to plan their trip.
-          </p>
-        </div>
-      </section>
-
-      {/* Updates Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <h3 className="text-2xl font-semibold text-themedark mb-4 text-center">
-            Guests can refer back anytime to get updates on:
-          </h3>
-          <ul className="max-w-xl mx-auto list-disc list-inside space-y-2 text-lg text-gray-700">
-            <li>Guest services and amenities</li>
-            <li>Local area guides, attractions, and events</li>
-            <li>Maps, local businesses, and essential services</li>
-            <li>Special offers and promotions</li>
-          </ul>
-          <p className="mt-8 text-center text-lg text-gray-700">
-            With an affordable subscription and no lock-in contracts, the Digital Compendium is a flexible, low-cost solution that requires minimal effort to maintain. It is an interactive and cost-effective way to increase revenue, improve efficiency, and enhance the guest experience.
-          </p>
-          <p className="mt-4 text-center text-2xl font-bold text-themedark">
-            Starting from $1.26 per day
-          </p>
-        </div>
-      </section>
-
-
-
-      {/* Footer Section */}
-      <footer className="bg-white py-12 px-6">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h4 className="font-semibold text-themedark mb-4">You Are In Control</h4>
-            <nav className="space-y-2 text-gray-700">
-              {/* <a href="/">Home</a>
-              <a href="/products/compendium">Compendiums</a>
-              <a href="/products/touchscreen">Touchscreens</a>
-              <a href="/about">About</a>
-              <a href="/contact">Contact</a> */}
-            </nav>
+        <div className="max-w-7xl mx-auto flex items-center bg-indigo-50 rounded-4xl mt-10">
+          {/* 左侧图片 */}
+          <Image
+            src="Home_10.png"
+            alt="Home_10"
+            width={600}
+            height={300}
+            unoptimized
+            priority
+            className='w-3/5 rounded-4xl'
+          />
+          {/* 右侧文案 */}
+          <div className="space-y-4 w-2/5 px-8 flex flex-col gap-8">
+            <h2 className="text-3xl font-bold text-themedark">
+              Starting from $1.26 per day
+            </h2>
+            <p className="text-lg">
+              With an affordable subscription and no lock-in contracts,
+              the Digital Compendium is a flexible, low-cost solution that
+              requires minimal effort to maintain. It is an interactive a
+              cost-effective way to increase revenue, improve efficiency, and
+              enhance the guest experience.
+            </p>
+            <button className="px-8 py-4 font-semibold bg-themeblue text-white rounded-full hover:opacity-90 transition w-48">
+              SEE PACKAGES
+            </button>
           </div>
-          <div>
-            <h4 className="font-semibold text-themedark mb-4">KNOW MORE</h4>
-            <nav className="space-y-2 text-gray-700">
-              <a href="/folders">Compendium Folders</a>
-              <a href="/guides">Just Brilliant Guides</a>
-              <a href="/products">Hospitality Products</a>
-            </nav>
+
+        </div>
+        <div className="max-w-7xl mx-auto py-8">
+          <HomeCarousel slides={slides} autoplaySpeed={5000} />
+        </div>
+        <div className="py-8">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* 左侧文案 */}
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold text-themedark">
+                You Are In Control
+              </h2>
+              <p className="text-lg pt-4">
+                Instant, up-to-date access to all your property's information on guests'<br />
+                smartphones or devices—no apps or downloads required. Customisable<br />
+                to match your branding, the Pladdypus Digital Concierge ensures your<br />
+                guests always have the latest details about your services, amenities, and<br />
+                local attractions at their fingertips.
+
+              </p>
+              <p className="text-lg">
+                With a user-friendly dashboard, updates are simple and immediate,<br />
+                streamlining your operations while boosting guest engagement.
+              </p>
+            </div>
+            {/* 右侧图片 */}
+            <Image
+              src="Home_11.png"
+              alt="Home_11"
+              width={600}
+              height={300}
+              unoptimized
+              priority
+              className='w-full rounded-4xl'
+            />
           </div>
-          <div>
-            <h4 className="font-semibold text-themedark mb-4">CONTACT US</h4>
-            <p className="text-gray-700">info@platypus360.com</p>
-            <p className="text-gray-700">1800 339 4933 (Freecall)</p>
-            <p className="text-gray-700">(03) 9879 8588</p>
-          </div>
+
+
         </div>
-        <div className="mt-8 text-center text-sm text-gray-500 max-w-screen-lg mx-auto">
-          We respect and honour Aboriginal and Torres Strait Islander Elders past, present and future. We acknowledge the stories, traditions and living cultures of Aboriginal and Torres Strait Islander peoples on this land and commit to building a brighter future together.
+
+        <div className='bg-themeblue h-40 rounded-b-4xl flex items-center justify-center'>
+          <button className='rounded-full bg-white px-8 py-6 color-themedark font-bold mt-2'>REQUEST A DEMO</button>
         </div>
-        <div className="mt-4 text-center text-sm text-gray-500">
-          © 2025 John Batman Group. All rights reserved. ABN 88 638 125 014 | Terms and Conditions | Site Map
-        </div>
-      </footer>
+      </section>
+
+
+
+
+
+
     </main>
   );
 }
