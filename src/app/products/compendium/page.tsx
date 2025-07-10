@@ -125,7 +125,7 @@ export default function CompendiumPage() {
               the link in booking confirmations and pre-arrival emails or make
               it instantly accessible by scanning a QR code upon arrival. This
               means guests can access essential information whenever they
-              need it, whether they're planning their day or checking out local
+              need it, whether they&apos;re planning their day or checking out local
               recommendations.
             </p>
             <button className="px-8 py-4 font-semibold bg-themeblue text-white rounded-full hover:opacity-90 transition w-48">
@@ -148,7 +148,7 @@ export default function CompendiumPage() {
           <div className="max-w-7xl mx-auto px-6 space-y-8">
             {/* Section Title */}
             <h2 className="text-4xl font-bold text-themedark text-center">
-              Your recommendations in the<br /> customer's pocket
+              Your recommendations in the<br /> customer&apos;s pocket
             </h2>
 
             {/* 4-column grid */}
