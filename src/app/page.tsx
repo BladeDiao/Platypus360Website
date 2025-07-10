@@ -37,7 +37,7 @@ export default function Home() {
         <div className='flex max-w-7xl mx-auto'>
           <div className='flex-1/2'>
             <Image
-              src="Home_1.png"
+              src="/Home_1.png"
               alt="Flag A"
               width={600}
               height={450}
@@ -77,7 +77,7 @@ export default function Home() {
           </h2>
           <div className='flex flex-col flex-1/2 p-8 gap-8'>
             <Image
-              src="Home_2.png"
+              src="/Home_2.png"
               alt="Home A"
               width={600}
               height={450}
@@ -86,7 +86,7 @@ export default function Home() {
               className='w-full h-80 shadow-2xl'
             />
             <Image
-              src="Home_3.png"
+              src="/Home_3.png"
               alt="Home B"
               width={600}
               height={450}
@@ -145,7 +145,7 @@ export default function Home() {
             </div>
             {/* 右侧图片 */}
             <Image
-              src="Home_8.png"
+              src="/Home_8.png"
               alt="Home_8"
               width={600}
               height={300}
@@ -161,7 +161,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex items-stretch rounded-4xl bg-themedark">
           {/* 左侧图片占位，后续替换成 <Image> */}
           <Image
-            src="Home_9.png"
+            src="/Home_9.png"
             alt="Home_9"
             width={600}
             height={300}
@@ -186,7 +186,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto flex items-center bg-indigo-50 rounded-4xl mt-10">
           {/* 左侧图片 */}
           <Image
-            src="Home_10.png"
+            src="/Home_10.png"
             alt="Home_10"
             width={600}
             height={300}
@@ -237,7 +237,7 @@ export default function Home() {
             </div>
             {/* 右侧图片 */}
             <Image
-              src="Home_11.png"
+              src="/Home_11.png"
               alt="Home_11"
               width={600}
               height={300}
