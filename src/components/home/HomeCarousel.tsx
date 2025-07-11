@@ -29,7 +29,7 @@ const HomeCarousel: FC<HomeCarouselProps> = ({
   const carouselRef = useRef<CarouselRef>(null);
 
   return (
-    <div className=" max-w-7xl relative bg-indigo-50 rounded-3xl py-16 overflow-hidden">
+    <div className=" max-w-7xl relative bg-indigo-50 rounded-3xl pt-16 pb-8 overflow-hidden">
       {/* 左箭头 */}
       <LeftOutlined
         className="absolute left-16 top-1/2 transform -translate-y-1/2 text-2xl text-themedark cursor-pointer z-10"
@@ -46,7 +46,7 @@ const HomeCarousel: FC<HomeCarouselProps> = ({
         {slides.map((slide, idx) => (
           <div key={idx} className="flex flex-col items-center">
             {/* 文案区 */}
-            <div className="max-w-xl text-center text-lg text-themedark mx-auto font-medium">
+            <div className="max-w-xl text-center text-lg text-themedark mx-auto font-medium ">
               {slide.content}
             </div>
 

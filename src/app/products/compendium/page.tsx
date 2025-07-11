@@ -10,6 +10,14 @@ export interface Feature {
   /** 描述文字 */
   description: string;
 }
+export interface Statistic {
+  /** 前缀文字，可选 */
+  prefix?: string;
+  /** 突出显示的值 */
+  value: string;
+  /** 后缀／描述文字 */
+  suffix: string;
+}
 
 export default function CompendiumPage() {
   const slides: Slide[] = [
@@ -74,6 +82,31 @@ export default function CompendiumPage() {
       icon: '/Products_15.png',
       title: 'Direct Bookings',
       description: 'Promote your properties special offers and promotions.',
+    },
+  ];
+  const statistics: Statistic[] = [
+    {
+      prefix: 'Over',
+      value: '90%',
+      suffix: 'of properties are now offering both Print & Digital Compendiums.',
+    },
+    {
+      prefix: 'Actively used in',
+      value: '7+',
+      suffix:
+        'countries around the world including Australia, New Zealand & the South Pacific.',
+    },
+    {
+      prefix: 'Hotel operational satisfaction is',
+      value: '90%',
+      suffix:
+        'on guest engagement, guest experience and operational efficiency.',
+    },
+    {
+      prefix: 'Average of',
+      value: '15–20%',
+      suffix:
+        'in reduced booking costs on each Digital Compendium direct booking.',
     },
   ];
 
@@ -289,7 +322,7 @@ export default function CompendiumPage() {
               Digital Compendium.
 
             </p>
-            <button className="px-8 py-4 font-semibold bg-themeblue text-white rounded-full hover:opacity-90 transition w-48">
+            <button className="px-8 py-4 font-semibold bg-themeblue text-white rounded-full hover:opacity-90 transition w-52">
               SEE THE RANGE
             </button>
           </div>
@@ -332,6 +365,68 @@ export default function CompendiumPage() {
               ))}
             </div>
 
+          </div>
+        </section>
+        <section
+          id="statistics"
+          className="bg-gradient-to-r from-themeblue to-themedark text-white py-16"
+        >
+          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            {statistics.map(({ prefix, value, suffix }, idx) => (
+              <div key={idx} className="space-y-2">
+                {prefix && (
+                  <p className="text-xs uppercase tracking-wider">{prefix}</p>
+                )}
+                <p className="text-5xl md:text-6xl font-bold leading-tight">
+                  {value}
+                </p>
+                <p className="text-base leading-relaxed px-2">{suffix}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="py-16 bg-white rounded-4xl overflow-hidden">
+          <div className="max-w-7xl mx-auto px-6 space-y-8">
+            {/* 标题 */}
+            <h2 className="text-3xl md:text-4xl font-bold text-themedark text-center">
+              Why Go Digital?
+            </h2>
+
+            {/* 内容区：左 6 个理由，右 占位图 */}
+            <div className="grid grid-cols-2 gap-16 items-stretch">
+              {/* 左侧 2 列 3 行 理由卡片 */}
+              <div className="grid grid-cols-2 gap-8">
+                {[
+                  'Increase direct bookings & promote special offers',
+                  'Save time with easy updates & real time content',
+                  'Quick & easy access to information – no app required',
+                  'Enhance the guest experience',
+                  'Boost your reviews',
+                  'Stand out from the competition',
+                ].map((text, idx) => (
+                  <div
+                    key={idx}
+                    className="bg-themedark text-white rounded-lg h-24 px-4 py-4 text-center text-base flex flex-col justify-center"
+                  >
+                    {text}
+                  </div>
+                ))}
+              </div>
+
+              {/* 右侧图片占位 */}
+              <div className="w-full h-full bg-gray-200 rounded-2xl flex items-center justify-center">
+                <Image
+                  src="/Products_16.png"
+                  alt="Products_16"
+                  width={1200}
+                  height={600}
+                  unoptimized
+                  priority
+                  className='rounded-2xl'
+                />
+              </div>
+            </div>
           </div>
         </section>
 

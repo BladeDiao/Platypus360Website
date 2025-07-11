@@ -46,7 +46,7 @@ export default function Home() {
               className='w-full scale-90'
             />
           </div>
-          <div className="flex-1/3 flex flex-col gap-20 py-20 px-8">
+          <div className="flex-1/3 flex flex-col gap-12 py-20 px-8">
             <h2 className="text-5xl font-bold text-white pt-8">
               Enhancing guest experience with digital solutions
             </h2>
@@ -60,7 +60,7 @@ export default function Home() {
               allows guests to access essential information on their
               own smartphone or device.
             </p>
-            <button className="px-8 py-4 font-semibold bg-themeblue text-white rounded-full hover:opacity-90 transition w-48">
+            <button className="px-8 py-4 font-semibold bg-themeblue text-white rounded-full hover:opacity-90 transition w-56">
               FIND OUT MORE
             </button>
           </div>
@@ -73,9 +73,9 @@ export default function Home() {
       <section className="pt-16 w-[calc(100vw-4rem)] mx-auto rounded-4xl relative -mt-20 z-10 bg-white shadow-2xl">
         <div className="mx-auto px-6 text-center space-y-6 flex max-w-7xl justify-center">
           <h2 className="text-5xl font-bold text-themedark flex-1/2 my-auto">
-            Simplify guest <br />communication, <br />promote your services, <br />and boost revenue with <br />a <FlipWord/><span className='invisible'>*********</span>  solution.
+            Simplify guest <br />communication, <br />promote your services, <br />and boost revenue with <br />a <FlipWord/><span className='invisible'>**********</span>  solution.
           </h2>
-          <div className='flex flex-col flex-1/2 p-8 gap-8'>
+          <div className='flex flex-col flex-5/12 p-8 gap-8'>
             <Image
               src="/Home_2.png"
               alt="Home A"
@@ -83,7 +83,7 @@ export default function Home() {
               height={450}
               unoptimized
               priority
-              className='w-full h-80 shadow-2xl'
+              className='w-full h-auto shadow-2xl object-cover'
             />
             <Image
               src="/Home_3.png"
@@ -92,7 +92,7 @@ export default function Home() {
               height={450}
               unoptimized
               priority
-              className='w-full h-80 shadow-2xl'
+              className='w-full h-auto shadow-2xl'
             />
           </div>
 
@@ -122,7 +122,7 @@ export default function Home() {
 
             {/* 右侧文案 */}
             <div className="text-white space-y-4 flex-1/2">
-              <h2 className="text-5xl md:text-4xl font-bold px-32 text-center">
+              <h2 className="text-5xl md:text-4xl font-bold px-28 text-center">
                 Revolutionise how <br />guests interact <br />with your property.
               </h2>
             </div>
@@ -206,7 +206,7 @@ export default function Home() {
               cost-effective way to increase revenue, improve efficiency, and
               enhance the guest experience.
             </p>
-            <button className="px-8 py-4 font-semibold bg-themeblue text-white rounded-full hover:opacity-90 transition w-48">
+            <button className="px-8 py-4 font-semibold bg-themeblue text-white rounded-full hover:opacity-90 transition w-56">
               SEE PACKAGES
             </button>
           </div>
@@ -222,7 +222,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-themedark">
                 You Are In Control
               </h2>
-              <p className="text-lg pt-4">
+              <p className=" pt-4">
                 Instant, up-to-date access to all your property&apos;s information on guests&apos;<br />
                 smartphones or devices—no apps or downloads required. Customisable<br />
                 to match your branding, the Pladdypus Digital Concierge ensures your<br />
@@ -230,7 +230,7 @@ export default function Home() {
                 local attractions at their fingertips.
 
               </p>
-              <p className="text-lg">
+              <p className="">
                 With a user-friendly dashboard, updates are simple and immediate,<br />
                 streamlining your operations while boosting guest engagement.
               </p>
